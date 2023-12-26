@@ -6,8 +6,28 @@ This repository contains the implementation of an Out-of-Distribution (OOD) dete
 
 ## Paper
 
-## Prerequisite
+## Main functionality
+- input: image
+- output: bounding box, label
 
-## Model Evaluation
+## How to use
+```bash
+$ conda create -n SAM_OOD python=3.8
+$ conda activate SAM_OOD
+$ conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 -c pytorch
+$ git clone https://github.com/SongJeongHyo/SAM_OOD.git
+```
 
+The weights that I learned are [HERE](). if you want to use, it is on ./scaled_cosine/model_final.pth. This file allows you to evaluate and visualize what model detect. 
+
+But if you want to train this model, specify the dataset path in train.py and type this command in terminal : python train.py
+
+## Running on The Dataset Folder:
+1. Prepare the dataset you want to test and put it under SAM-OOD-Detection directory. For example, if you use VOC dataset: ./SAM_OOD/voc_data
+2. And you can train with your dataset if you specify the path in train.py file.
+
+To evaluate and visualize, check the train.ipynb file and follow the section of evaluation.
+
+## Required program
+- Please follow the instruction to install the faster -rcnn dependencies (https://github.com/jwyang/faster-rcnn.pytorch) and detectron2 (https://detectron2.readthedocs.io/en/latest/tutorials/install.html) 
 
