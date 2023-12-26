@@ -5,6 +5,7 @@ This repository contains the implementation of an Out-of-Distribution (OOD) dete
 ![image](https://github.com/SongJeongHyo/SAM_OOD/assets/79832986/1cbf3952-71f7-4ec9-97db-ffc7fef49723)
 
 ## Paper
+Jeong-Hyo Song, Jae-ho Cho, Seung-Ik Lee, "Integrating Region Proposal Network and Segment Model for Enhanced Out-of-Distribution Object Detection", KSC2023, 2023
 
 ## Main functionality
 - input: image
@@ -18,7 +19,7 @@ $ conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 -c pytorch
 $ git clone https://github.com/SongJeongHyo/SAM_OOD.git
 ```
 
-The weights that I learned are [HERE](). if you want to use, it is on ./scaled_cosine/model_final.pth. This file allows you to evaluate and visualize what model detect. 
+The weights that I learned are [HERE](https://drive.google.com/file/d/1TXgAI5KW82CS22t1DZl74-K3b5Y_B6Rk/view?usp=sharing). if you want to use, it is on ./scaled_cosine/model_final.pth. This file allows you to evaluate and visualize what model detect. 
 
 But if you want to train this model, specify the dataset path in train.py and type this command in terminal : python train.py
 
