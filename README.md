@@ -24,7 +24,7 @@ The weights that I learned are [HERE](https://drive.google.com/file/d/1TXgAI5KW8
 But if you want to train this model, specify the dataset path in train.py and type this command in terminal : python train.py
 
 ## Running on The Dataset Folder:
-1. Prepare the dataset you want to test and put it under SAM-OOD-Detection directory. For example, if you use VOC dataset: ./SAM_OOD/voc_data
+1. Prepare the dataset you want to test and put it under SAM-OOD-Detection directory. For example, if you use [PASCAL VOC dataset](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/): ./SAM_OOD/voc_data
 2. And you can train with your dataset if you specify the path in train.py file.
 
 To evaluate and visualize, check the train.ipynb file and follow the section of evaluation.
