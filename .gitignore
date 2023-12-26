@@ -1,0 +1,8 @@
+ *.zip
+ckpt/
+datasets/
+__pycache__
+docker/
+.ipynb_checkpoints/
+
+

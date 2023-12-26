@@ -1,0 +1,26 @@
+_BASE_: "../Base-RCNN-FPN.yaml"
+MODEL:
+  META_ARCHITECTURE: "GeneralizedRCNN"
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 50
+  ROI_HEADS:
+    NAME: "StandardROIHeads"
+    # NAME: "CustomROIHeads"  # cross-entropy with class weights
+    NUM_CLASSES: 21
+INPUT:
+  MIN_SIZE_TRAIN: (480, 512, 544, 576, 608, 640, 672, 704, 736, 768, 800)
+  MIN_SIZE_TEST: 800
+DATASETS:
+  TRAIN: ('train_dataset',)
+  TEST: ('val_dataset',)
+SOLVER:
+  IMS_PER_BATCH: 4
+  BASE_LR: 0.02
+  STEPS: (12000, 16000)
+  MAX_ITER: 18000  # 17.4 epochs
+  WARMUP_ITERS: 100
+DATALOADER:
+    NUM_WORKERS: 8  # Depends on the available memory
+OUTPUT_DIR: "ckpt/PascalVOC-OOD-Detection"
