@@ -5,7 +5,7 @@ This repository contains the implementation of an Out-of-Distribution (OOD) dete
 ![image](https://github.com/SongJeongHyo/SAM_OOD/assets/79832986/1cbf3952-71f7-4ec9-97db-ffc7fef49723)
 
 ## Paper
-Jeong-Hyo Song, Jae-ho Cho, Seung-Ik Lee, "Integrating Region Proposal Network and Segment Model for Enhanced Out-of-Distribution Object Detection", KSC2023, 2023
+Jeong-hyo Song, Jae-ho Cho, Seung-Ik Lee, "Integrating Region Proposal Network and Segment Model for Enhanced Out-of-Distribution Object Detection", KSC2023, 2023
 
 ## Main functionality
 - input: image
