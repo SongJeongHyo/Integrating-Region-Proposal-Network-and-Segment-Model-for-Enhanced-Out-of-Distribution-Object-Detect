@@ -1,8 +1,8 @@
 # Integrating Region Proposal Network and Segment Model for Enhanced Out-of-Distribution Object Detection
 
-This repository contains the implementation of an Out-of-Distribution (OOD) detection model that combines the strengths of [Segment Anything Model (SAM)](https://ai.meta.com/research/publications/segment-anything/) and [Faster R-CNN](https://arxiv.org/abs/1506.01497).
+This repository contains the implementation of an Out-of-Distribution (OOD) detection model that combines the strengths of Segment model and [Faster R-CNN](https://arxiv.org/abs/1506.01497).
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/afb2d9dd-2a93-45f6-ba0b-938255d728e3)
 
 
 
